@@ -1,7 +1,8 @@
 /* ==========================================================================
    QUBITHRS SPECIFICATION ARCHITECTURE
    Pattern: Simple, Clean, Minimalist (from User Reference)
-   Theme: QUBITHRS Obsidian Dark Luxury (#000000, #FFFFFF, Electric Cyan #00F0FF)
+   Theme: QUBITHRS Monochromatic Obsidian Luxury (#000000, #FFFFFF, Slate #94A3B8)
+   100% Harmonized with Original Website Foundation
    ========================================================================== */
 
 /* Page Background & Base Tokens */
@@ -35,7 +36,7 @@ body.qh-dark-page {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #00F0FF;
+  color: #FFFFFF;
   font-family: var(--font-heading);
   font-size: 0.88rem;
   font-weight: 700;
@@ -46,9 +47,8 @@ body.qh-dark-page {
 }
 
 .btn-back-services:hover {
-  color: #FFFFFF;
+  color: #94A3B8;
   transform: translateX(-4px);
-  text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
 }
 
 .clean-division-pills {
@@ -86,7 +86,7 @@ body.qh-dark-page {
   background: #FFFFFF;
   border-color: #FFFFFF;
   font-weight: 700;
-  box-shadow: 0 0 14px rgba(255, 255, 255, 0.35);
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.25);
 }
 
 .clean-pager-controls {
@@ -121,21 +121,21 @@ body.qh-dark-page {
 }
 
 .clean-pager-btn:hover {
-  background: rgba(0, 240, 255, 0.15);
-  border-color: rgba(0, 240, 255, 0.4);
-  color: #00F0FF;
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #FFFFFF;
   transform: translateY(-1px);
 }
 
 /* Dark Hero Banner Card (Obsidian Glass) */
 .clean-hero-card {
-  background: linear-gradient(145deg, #0C101C 0%, #060810 100%);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(145deg, #101117 0%, #08080B 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 22px;
   padding: clamp(40px, 6vw, 56px) clamp(24px, 5vw, 48px);
   text-align: center;
   color: #FFFFFF;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
   margin-bottom: 40px;
   position: relative;
   overflow: hidden;
@@ -149,7 +149,7 @@ body.qh-dark-page {
   transform: translateX(-50%);
   width: 60%;
   height: 100%;
-  background: radial-gradient(ellipse at top, rgba(0, 240, 255, 0.06) 0%, transparent 70%);
+  background: radial-gradient(ellipse at top, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -199,14 +199,14 @@ body.qh-dark-page {
   max-width: 960px;
 }
 
-/* "What's Included" Container (Obsidian Frame with Cyan Accents) */
+/* "What's Included" Container (Monochromatic Obsidian Frame) */
 .clean-included-box {
-  background: rgba(12, 16, 26, 0.75);
-  border: 1px solid rgba(0, 240, 255, 0.2);
+  background: rgba(14, 15, 20, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 22px;
   padding: clamp(28px, 4vw, 36px);
   margin-bottom: 48px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(0, 240, 255, 0.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
 .clean-included-title {
@@ -231,7 +231,7 @@ body.qh-dark-page {
 }
 
 .clean-included-item {
-  background: #101422;
+  background: #111218;
   border-radius: 14px;
   padding: 16px 20px;
   display: flex;
@@ -244,17 +244,17 @@ body.qh-dark-page {
 
 .clean-included-item:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 240, 255, 0.1);
-  border-color: rgba(0, 240, 255, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  border-color: rgba(255, 255, 255, 0.25);
 }
 
 .clean-check-badge {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: rgba(0, 240, 255, 0.12);
-  border: 1px solid rgba(0, 240, 255, 0.3);
-  color: #00F0FF;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -286,7 +286,7 @@ body.qh-dark-page {
 }
 
 .clean-spec-card {
-  background: #0B0F1A;
+  background: #0E0F14;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 18px;
   padding: 28px;
@@ -323,7 +323,7 @@ body.qh-dark-page {
 }
 
 .clean-deliv-bullet {
-  color: #00F0FF;
+  color: #FFFFFF;
   font-weight: 700;
   line-height: 1;
   margin-top: 4px;
@@ -349,8 +349,9 @@ body.qh-dark-page {
 }
 
 .clean-param-val.highlight {
-  color: #00F0FF;
+  color: #FFFFFF;
   font-family: var(--font-mono);
+  font-weight: 700;
 }
 
 .clean-tech-tags {
@@ -380,7 +381,7 @@ body.qh-dark-page {
   margin-top: 8px;
 }
 
-/* Action Buttons Footer */
+/* Action Buttons Footer - Pure Monochromatic Foundation */
 .clean-action-footer {
   display: flex;
   align-items: center;
@@ -395,7 +396,7 @@ body.qh-dark-page {
   align-items: center;
   gap: 10px;
   padding: 14px 28px;
-  background: #00F0FF;
+  background: #FFFFFF;
   color: #000000;
   font-family: var(--font-heading);
   font-size: 0.95rem;
@@ -403,15 +404,15 @@ body.qh-dark-page {
   border-radius: 9999px;
   text-decoration: none;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 0 20px rgba(0, 240, 255, 0.35);
-  border: none;
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.15);
+  border: 1px solid #FFFFFF;
 }
 
 .btn-clean-primary:hover {
-  background: #FFFFFF;
+  background: #E2E8F0;
   color: #000000;
   transform: translateY(-2px);
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.28);
 }
 
 .btn-clean-secondary {

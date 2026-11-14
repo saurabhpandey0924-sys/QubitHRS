@@ -221,7 +221,7 @@
           <!-- Left: Scope of Deliverables -->
           <div class="clean-spec-card">
             <h3 class="clean-spec-heading">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0284C7" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
               <span>What You Receive (Deliverables)</span>
             </h3>
             <ul class="clean-deliv-list">
@@ -237,7 +237,7 @@
           <!-- Right: Architecture Blueprint & Guarantees -->
           <div class="clean-spec-card">
             <h3 class="clean-spec-heading">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0284C7" stroke-width="2.2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
               <span>Architecture Blueprint</span>
             </h3>
 
@@ -260,7 +260,7 @@
                   ${(s.tags || []).map(t => `<span class="clean-tag-pill">${t}</span>`).join('')}
                 </div>
               </div>
-              <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid #E2E8F0;">
+              <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(255, 255, 255, 0.08);">
                 <span class="clean-param-key" style="display:block; margin-bottom: 6px;">Included Guarantees:</span>
                 ${(s.includedGuarantees || []).map(g => `
                   <div class="clean-guarantee-row">
