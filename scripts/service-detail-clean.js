@@ -173,115 +173,160 @@
           </div>
         </div>
 
-        <!-- Dark Hero Banner Card (Exact match to user reference screenshot) -->
-        <div class="clean-hero-card">
-          <h1 class="clean-hero-title">${displayTitle}</h1>
-          <p class="clean-hero-subtitle">${displaySubtitle}</p>
-        </div>
-
-        <!-- Overview Section (Exact match to user reference screenshot) -->
-        <div class="clean-overview-section">
-          <h2 class="clean-sec-title">Overview</h2>
-          <p class="clean-overview-text">${displayOverview}</p>
-        </div>
-
-        <!-- "What's Included" Container (Exact match to user reference screenshot) -->
-        <div class="clean-included-box">
-          <h3 class="clean-included-title">What's Included</h3>
-          <div class="clean-included-grid">
-            ${includedItems.map(item => `
-              <div class="clean-included-item">
-                <span class="clean-check-badge">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="20 6 9 17 4 12"/>
-                  </svg>
-                </span>
-                <span class="clean-item-text">${item}</span>
-              </div>
-            `).join('')}
-          </div>
-        </div>
-
-        <!-- 2-Column Split: Deliverables & Specifications -->
-        <div class="clean-specs-split">
-          <!-- Left: Scope of Deliverables -->
-          <div class="clean-spec-card">
-            <h3 class="clean-spec-heading">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              <span>What You Receive (Deliverables)</span>
-            </h3>
-            <ul class="clean-deliv-list">
-              ${(s.deliverables || []).map(d => `
-                <li class="clean-deliv-row">
-                  <span class="clean-deliv-bullet">&bull;</span>
-                  <span>${d}</span>
-                </li>
-              `).join('')}
-            </ul>
+        <!-- Dynamic Content Body with Smooth Cross-Fade Transition -->
+        <div class="clean-spec-content" id="clean-spec-content">
+          <!-- Dark Hero Banner Card with Mouse-Tracking Spotlight -->
+          <div class="clean-hero-card">
+            <h1 class="clean-hero-title">${displayTitle}</h1>
+            <p class="clean-hero-subtitle">${displaySubtitle}</p>
           </div>
 
-          <!-- Right: Architecture Blueprint & Guarantees -->
-          <div class="clean-spec-card">
-            <h3 class="clean-spec-heading">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
-              <span>Architecture Blueprint</span>
-            </h3>
+          <!-- Overview Section -->
+          <div class="clean-overview-section">
+            <h2 class="clean-sec-title">Overview</h2>
+            <p class="clean-overview-text">${displayOverview}</p>
+          </div>
 
-            <div>
-              <div class="clean-param-row">
-                <span class="clean-param-key">Typical Delivery:</span>
-                <span class="clean-param-val highlight">${s.timeline}</span>
-              </div>
-              <div class="clean-param-row">
-                <span class="clean-param-key">Execution Team:</span>
-                <span class="clean-param-val">Dedicated QUBITHRS Developers</span>
-              </div>
-              <div class="clean-param-row">
-                <span class="clean-param-key">Intellectual Property:</span>
-                <span class="clean-param-val">100% IP & Code Ownership</span>
-              </div>
-              <div style="padding-top: 12px;">
-                <span class="clean-param-key" style="display:block; margin-bottom: 6px;">Core Technologies:</span>
-                <div class="clean-tech-tags">
-                  ${(s.tags || []).map(t => `<span class="clean-tag-pill">${t}</span>`).join('')}
+          <!-- "What's Included" Container with Interactive Spotlight Items -->
+          <div class="clean-included-box">
+            <h3 class="clean-included-title">What's Included</h3>
+            <div class="clean-included-grid">
+              ${includedItems.map(item => `
+                <div class="clean-included-item">
+                  <span class="clean-check-badge">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </span>
+                  <span class="clean-item-text">${item}</span>
                 </div>
-              </div>
-              <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(255, 255, 255, 0.08);">
-                <span class="clean-param-key" style="display:block; margin-bottom: 6px;">Included Guarantees:</span>
-                ${(s.includedGuarantees || []).map(g => `
-                  <div class="clean-guarantee-row">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                    <span>${g}</span>
-                  </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- 2-Column Split: Deliverables & Specifications -->
+          <div class="clean-specs-split">
+            <!-- Left: Scope of Deliverables -->
+            <div class="clean-spec-card">
+              <h3 class="clean-spec-heading">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>What You Receive (Deliverables)</span>
+              </h3>
+              <ul class="clean-deliv-list">
+                ${(s.deliverables || []).map(d => `
+                  <li class="clean-deliv-row">
+                    <span class="clean-deliv-bullet">&bull;</span>
+                    <span>${d}</span>
+                  </li>
                 `).join('')}
+              </ul>
+            </div>
+
+            <!-- Right: Architecture Blueprint & Guarantees -->
+            <div class="clean-spec-card">
+              <h3 class="clean-spec-heading">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                <span>Architecture Blueprint</span>
+              </h3>
+
+              <div>
+                <div class="clean-param-row">
+                  <span class="clean-param-key">Typical Delivery:</span>
+                  <span class="clean-param-val highlight">${s.timeline}</span>
+                </div>
+                <div class="clean-param-row">
+                  <span class="clean-param-key">Execution Team:</span>
+                  <span class="clean-param-val">Dedicated QUBITHRS Developers</span>
+                </div>
+                <div class="clean-param-row">
+                  <span class="clean-param-key">Intellectual Property:</span>
+                  <span class="clean-param-val">100% IP & Code Ownership</span>
+                </div>
+                <div style="padding-top: 12px;">
+                  <span class="clean-param-key" style="display:block; margin-bottom: 6px;">Core Technologies:</span>
+                  <div class="clean-tech-tags">
+                    ${(s.tags || []).map(t => `<span class="clean-tag-pill">${t}</span>`).join('')}
+                  </div>
+                </div>
+                <div style="margin-top: 16px; padding-top: 12px; border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                  <span class="clean-param-key" style="display:block; margin-bottom: 6px;">Included Guarantees:</span>
+                  ${(s.includedGuarantees || []).map(g => `
+                    <div class="clean-guarantee-row">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                      <span>${g}</span>
+                    </div>
+                  `).join('')}
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Action Buttons Footer -->
-        <div class="clean-action-footer">
-          <a href="contact.html?service=${s.id}" class="btn-clean-primary" style="background:#FFFFFF !important; color:#000000 !important; border:1px solid #FFFFFF !important;">
-            <span style="color:#000000 !important; font-weight:700 !important; font-family:var(--font-heading) !important; font-size:0.95rem !important;">Inquire About This Service</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" style="stroke:#000000 !important; color:#000000 !important;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-          <a href="contact.html" class="btn-clean-secondary" style="color:#FFFFFF !important;">
-            <span style="color:#FFFFFF !important; font-weight:600 !important;">Book Discovery Call &rarr;</span>
-          </a>
+          <!-- Action Buttons Footer with Shimmer & Spring Arrow Slide -->
+          <div class="clean-action-footer">
+            <a href="contact.html?service=${s.id}" class="btn-clean-primary" style="background:#FFFFFF !important; color:#000000 !important; border:1px solid #FFFFFF !important;">
+              <span style="color:#000000 !important; font-weight:700 !important; font-family:var(--font-heading) !important; font-size:0.95rem !important;">Inquire About This Service</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" style="stroke:#000000 !important; color:#000000 !important;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="contact.html" class="btn-clean-secondary" style="color:#FFFFFF !important;">
+              <span style="color:#FFFFFF !important; font-weight:600 !important;">Book Discovery Call</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
         </div>
       </div>
     `;
 
-    // Division pill & pager click handler
-    const buttons = container.querySelectorAll('.clean-div-btn, .clean-pager-btn');
-    buttons.forEach(btn => {
-      btn.addEventListener('click', () => {
+    // Initialize Interactive Card Spotlight on all cards
+    initCardSpotlight(container);
+
+    // Division pager click handler with smooth transition cross-fade
+    const pagerButtons = container.querySelectorAll('.clean-pager-btn');
+    pagerButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
         const targetId = btn.getAttribute('data-service-id');
         if (targetId && targetId !== serviceId) {
-          renderCleanService(targetId, true);
+          const content = container.querySelector('.clean-spec-content');
+          if (content) {
+            content.classList.add('is-switching');
+            setTimeout(() => {
+              renderCleanService(targetId, true);
+            }, 180);
+          } else {
+            renderCleanService(targetId, true);
+          }
         }
       });
     });
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  /**
+   * Interactive Mouse-Tracking Spotlight Border
+   * Tracks mouse position relative to each card for smooth 120 FPS glass lighting
+   */
+  function initCardSpotlight(scope) {
+    const cards = (scope || document).querySelectorAll('.clean-hero-card, .clean-included-item, .clean-spec-card');
+    cards.forEach(card => {
+      let rafId = null;
+      card.addEventListener('mousemove', (e) => {
+        if (rafId) cancelAnimationFrame(rafId);
+        rafId = requestAnimationFrame(() => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          card.style.setProperty('--mouse-x', `${x}px`);
+          card.style.setProperty('--mouse-y', `${y}px`);
+        });
+      }, { passive: true });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.removeProperty('--mouse-x');
+        card.style.removeProperty('--mouse-y');
+      }, { passive: true });
+    });
+  }
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
