@@ -81,12 +81,15 @@ body.qh-dark-page {
   border-color: rgba(255, 255, 255, 0.2);
 }
 
-.clean-div-btn.active {
-  color: #000000;
-  background: #FFFFFF;
-  border-color: #FFFFFF;
-  font-weight: 700;
-  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.25);
+.clean-div-btn.active,
+.clean-div-btn.active span,
+body.qh-dark-page .clean-div-btn.active,
+body.qh-dark-page .clean-div-btn.active span {
+  color: #000000 !important;
+  background: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.25) !important;
 }
 
 .clean-pager-controls {
@@ -391,49 +394,115 @@ body.qh-dark-page {
   padding: 24px 0;
 }
 
-.btn-clean-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 28px;
-  background: #FFFFFF;
-  color: #000000;
-  font-family: var(--font-heading);
-  font-size: 0.95rem;
-  font-weight: 700;
-  border-radius: 9999px;
-  text-decoration: none;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.15);
-  border: 1px solid #FFFFFF;
+.btn-clean-primary,
+body.qh-dark-page .btn-clean-primary,
+body.qh-dark-page a.btn-clean-primary {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  padding: 14px 28px !important;
+  background: #FFFFFF !important;
+  background-color: #FFFFFF !important;
+  color: #000000 !important;
+  font-family: var(--font-heading) !important;
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  border-radius: 9999px !important;
+  text-decoration: none !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid #FFFFFF !important;
+  cursor: pointer !important;
 }
 
-.btn-clean-primary:hover {
-  background: #E2E8F0;
-  color: #000000;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.28);
+.btn-clean-primary *,
+.btn-clean-primary span,
+body.qh-dark-page .btn-clean-primary *,
+body.qh-dark-page .btn-clean-primary span,
+body.qh-dark-page a.btn-clean-primary *,
+body.qh-dark-page a.btn-clean-primary span {
+  color: #000000 !important;
+  font-family: var(--font-heading) !important;
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  background: transparent !important;
+  display: inline-block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  line-height: 1 !important;
 }
 
-.btn-clean-secondary {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 14px 26px;
-  background: rgba(255, 255, 255, 0.06);
-  color: #FFFFFF;
-  font-family: var(--font-heading);
-  font-size: 0.95rem;
-  font-weight: 600;
-  border-radius: 9999px;
-  text-decoration: none;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  transition: all 0.2s ease;
+.btn-clean-primary svg,
+body.qh-dark-page .btn-clean-primary svg,
+body.qh-dark-page a.btn-clean-primary svg {
+  stroke: #000000 !important;
+  color: #000000 !important;
+  stroke-width: 2.5 !important;
+  display: inline-block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
-.btn-clean-secondary:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.3);
-  transform: translateY(-2px);
-  color: #FFFFFF;
+.btn-clean-primary svg *,
+body.qh-dark-page .btn-clean-primary svg *,
+body.qh-dark-page a.btn-clean-primary svg * {
+  stroke: #000000 !important;
+}
+
+.btn-clean-primary:hover,
+body.qh-dark-page .btn-clean-primary:hover,
+body.qh-dark-page a.btn-clean-primary:hover {
+  background: #E2E8F0 !important;
+  background-color: #E2E8F0 !important;
+  color: #000000 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.28) !important;
+}
+
+.btn-clean-primary:hover *,
+.btn-clean-primary:hover span,
+body.qh-dark-page .btn-clean-primary:hover *,
+body.qh-dark-page .btn-clean-primary:hover span,
+body.qh-dark-page a.btn-clean-primary:hover *,
+body.qh-dark-page a.btn-clean-primary:hover span {
+  color: #000000 !important;
+}
+
+.btn-clean-secondary,
+body.qh-dark-page .btn-clean-secondary,
+body.qh-dark-page a.btn-clean-secondary {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 14px 26px !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: #FFFFFF !important;
+  font-family: var(--font-heading) !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  border-radius: 9999px !important;
+  text-decoration: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-clean-secondary *,
+.btn-clean-secondary span,
+body.qh-dark-page .btn-clean-secondary *,
+body.qh-dark-page .btn-clean-secondary span {
+  color: #FFFFFF !important;
+  font-family: var(--font-heading) !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+}
+
+.btn-clean-secondary:hover,
+body.qh-dark-page .btn-clean-secondary:hover,
+body.qh-dark-page a.btn-clean-secondary:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  transform: translateY(-2px) !important;
+  color: #FFFFFF !important;
 }

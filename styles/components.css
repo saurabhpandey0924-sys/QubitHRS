@@ -4663,7 +4663,7 @@ body.qh-dark-page .luxury-title {
 
 /* All Body, Subtitles, Paragraphs, Lists, and Metadata (excluding footer) */
 body.qh-dark-page p:not(.footer *),
-body.qh-dark-page span:not(.footer *):not(.btn *):not(.btn):not(.btn-primary *):not(.btn-secondary *):not(.luxury-cta *):not(.drawer-cta-btn *):not(.filter-btn *):not(.slide-pager-btn *):not(.btn-back-to-services *):not(button *):not(button):not(.check-icon):not(.cross-icon):not(.warn-icon):not(.badge-tangerine):not(.badge-lime):not(.badge-plum),
+body.qh-dark-page span:not(.footer *):not(.btn *):not(.btn):not(.btn-primary *):not(.btn-secondary *):not(.btn-clean-primary *):not(.btn-clean-primary):not(.btn-clean-secondary *):not(.btn-clean-secondary):not(.luxury-cta *):not(.drawer-cta-btn *):not(.filter-btn *):not(.slide-pager-btn *):not(.btn-back-to-services *):not(button *):not(button):not(.check-icon):not(.cross-icon):not(.warn-icon):not(.badge-tangerine):not(.badge-lime):not(.badge-plum),
 body.qh-dark-page li:not(.footer *),
 body.qh-dark-page td:not(.footer *),
 body.qh-dark-page th:not(.footer *),
