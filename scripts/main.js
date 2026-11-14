@@ -1354,6 +1354,11 @@ function initScrollAnimations() {
     if (heroVid) {
       heroVid.muted = true;
       heroVid.defaultMuted = true;
+      heroVid.playsInline = true;
+      if (!heroVid.src && heroVid.querySelector('source')) {
+        heroVid.src = heroVid.querySelector('source').src;
+      }
+      try { heroVid.load(); } catch (e) {}
       const initialPlay = heroVid.play();
       if (initialPlay !== undefined) {
         initialPlay.catch(() => {});
