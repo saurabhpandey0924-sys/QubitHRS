@@ -11,3 +11,7 @@ Thumbs.db
 # Agent workspace data
 .agents/
 
+# Permanently banned images
+assets/images/project-saas.jpg
+project-saas.jpg
+

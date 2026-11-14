@@ -919,7 +919,7 @@ function renderProjects(projects, filter = 'all') {
     const metricsList = p.metrics || [];
     const summaryText = p.summary || p.description || '';
     const categoryLabel = p.categoryLabel || p.category || 'Case Study';
-    const thumbnailImg = p.thumbnail || 'assets/images/project-saas.jpg';
+    const thumbnailImg = p.thumbnail || 'assets/images/qh-logo-badge.png';
 
     return `
       <div class="project-card reveal" data-category="${p.category || 'all'}">
