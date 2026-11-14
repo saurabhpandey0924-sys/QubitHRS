@@ -155,26 +155,12 @@
 
     container.innerHTML = `
       <div class="clean-spec-wrapper">
-        <!-- Top Back Nav & Quick Division Switcher -->
+        <!-- Top Back Nav & Division Controls -->
         <div class="clean-top-nav">
           <a href="index.html#division-${divNum}" class="btn-back-services" aria-label="Back to services showcase">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
             <span>BACK TO SERVICES</span>
           </a>
-
-          <div class="clean-division-pills" role="tablist" aria-label="Division Switcher">
-            ${services.map((srv, idx) => {
-              const numStr = (idx + 1).toString().padStart(2, '0');
-              const shortName = DIVISION_SHORT_NAMES[srv.id] || srv.title.split('&')[0].trim();
-              const isActive = srv.id === serviceId;
-              return `
-                <button type="button" class="clean-div-btn ${isActive ? 'active' : ''}" data-service-id="${srv.id}" role="tab" aria-selected="${isActive}">
-                  <span>${numStr}</span>
-                  <span>${shortName}</span>
-                </button>
-              `;
-            }).join('')}
-          </div>
 
           <div class="clean-pager-controls">
             <span class="clean-pager-indicator">${currIdx + 1} of ${services.length}</span>
