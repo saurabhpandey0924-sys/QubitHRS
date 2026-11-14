@@ -227,7 +227,7 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" style="stroke:#000000 !important; color:#000000 !important;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
           <a href="contact.html" class="btn-clean-secondary" style="color:#FFFFFF !important;">
-            <span style="color:#FFFFFF !important; font-weight:600 !important;">Book Discovery Call &rarr;</span>
+            <span style="color:#FFFFFF !important; font-weight:600 !important;">Start a Project &rarr;</span>
           </a>
         </div>
       </div>
