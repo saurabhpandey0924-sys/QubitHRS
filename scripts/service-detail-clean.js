@@ -223,11 +223,8 @@
         <!-- Action Buttons Footer -->
         <div class="clean-action-footer">
           <a href="contact.html?service=${s.id}" class="btn-clean-primary" style="background:#FFFFFF !important; color:#000000 !important; border:1px solid #FFFFFF !important;">
-            <span style="color:#000000 !important; font-weight:700 !important; font-family:var(--font-heading) !important; font-size:0.95rem !important;">Inquire About This Service</span>
+            <span style="color:#000000 !important; font-weight:700 !important; font-family:var(--font-heading) !important; font-size:0.95rem !important;">Start a Project</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.5" style="stroke:#000000 !important; color:#000000 !important;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          </a>
-          <a href="contact.html" class="btn-clean-secondary" style="color:#FFFFFF !important;">
-            <span style="color:#FFFFFF !important; font-weight:600 !important;">Start a Project &rarr;</span>
           </a>
         </div>
       </div>
