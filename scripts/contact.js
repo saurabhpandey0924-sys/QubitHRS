@@ -22,12 +22,15 @@
 
     if (serviceParam) {
       const serviceMap = {
-        'software-web': 'Web & Custom Software',
-        'saas-cloud': 'Custom SaaS & Cloud Architecture',
-        'ai-automation': 'AI Agents & Workflow Automation',
-        'cybersecurity-defense': 'Cybersecurity & Cloud Defense',
-        'mobile-apps': 'Mobile & Cross-Platform Apps',
-        'api-integration': 'API & Enterprise Integration'
+        'data-analytics': 'Data Analytics & Business Intelligence',
+        'ai-automation': 'AI & Intelligent Automation',
+        'software-web': 'Software & Custom Web Development',
+        'cloud-devops': 'Cloud & DevOps Engineering',
+        'cybersecurity-defense': 'Cybersecurity & Digital Defense',
+        // Legacy fallbacks
+        'saas-cloud': 'Cloud & DevOps Engineering',
+        'mobile-apps': 'Software & Custom Web Development',
+        'api-integration': 'Software & Custom Web Development'
       };
       const mappedService = serviceMap[serviceParam] || serviceParam;
       if (serviceSelect) {
