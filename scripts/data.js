@@ -253,14 +253,14 @@ const PORTFOLIO_DATA = {
       accentColor: "#8B5CF6",
       glowColor: "rgba(139, 92, 246, 0.35)",
       title: "Rapid MVP & Scalable Multi-Tenant Platforms",
-      desc: "Production-ready web apps shipped in 2-3 weeks with multi-tenant databases, Stripe subscription billing, and investor-grade analytics.",
+      desc: "Production-ready web apps shipped in agile milestone sprints with multi-tenant databases, Stripe subscription billing, and investor-grade analytics.",
       image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?q=80&w=1200&auto=format&fit=crop",
       metricsList: [
-        { value: "2-3 Wks", label: "MVP Speed" },
+        { value: "Agile", label: "Sprint Delivery" },
         { value: "$25M+", label: "Client Funding" },
         { value: "0 Tech Debt", label: "Scalable Architecture" }
       ],
-      metric: { value: "2-3 Wks", label: "MVP Speed" }
+      metric: { value: "Agile", label: "Sprint Delivery" }
     },
     {
       id: "ecommerce",
@@ -603,7 +603,7 @@ const PORTFOLIO_DATA = {
   faqs: [
     {
       q: "What is your typical project timeline?",
-      a: "Timelines depend on project complexity. A high-converting landing page or MVP typically takes 5 to 7 days, whereas a full-featured SaaS web application takes between 2 to 4 weeks. We always provide a clear milestone calendar before kickoff."
+      a: "Timelines are determined based on the specific architectural scope and features required. We structure all engineering into clear, milestone-driven sprints with a transparent deliverable calendar established prior to kickoff."
     },
     {
       q: "How does the payment and contract structure work?",
